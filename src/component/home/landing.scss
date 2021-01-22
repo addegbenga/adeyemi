@@ -1,0 +1,163 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  img {
+    padding-top: 3rem;
+  }
+  div {
+    width: 90%;
+    margin: auto;
+    h1 {
+      @include header4();
+      margin-bottom: 2rem;
+    }
+    p {
+      @include subtitle1();
+    }
+    button {
+      @include buttons();
+      margin-top: 1rem;
+    }
+  }
+}
+
+//about section
+.about-container {
+  padding-top: 4rem;
+  width: 90%;
+  margin: auto;
+  h1 {
+    @include header5();
+    position: relative;
+    padding: 2px;
+    margin-bottom: 3rem;
+    &::after {
+      content: "";
+      bottom: -40%;
+      left: -10%;
+      position: absolute;
+      background-color: #ffa500;
+      width: 90%;
+      height: 0.1px;
+    }
+  }
+  .about-wrapper {
+    p {
+      @include body1();
+    }
+    div {
+      display: flex;
+      flex-direction: column-reverse;
+      button {
+        width: 40%;
+        margin-top: 2rem;
+        margin-left: -24px;
+        @include buttons();
+        padding: 10px;
+      }
+      .tech-container {
+        ul {
+          display: flex;
+          width: 70%;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+          li {
+            font-size: 20px;
+            background: #ffffff;
+            box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.3),
+              0px 16px 24px rgba(50, 50, 71, 0.08);
+            border: 1px solid rgb(249, 229, 255);
+            border-radius: 50px;
+            padding: 10px;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//projects section
+
+.project-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  h1 {
+    @include header5();
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+    position: relative;
+    padding: 5px;
+    &::after {
+      content: "";
+      bottom: -40%;
+      left: -10%;
+      position: absolute;
+      background-color: #ffa500;
+      width: 90%;
+      height: 0.1px;
+    }
+  }
+  .project-container {
+    display: flex;
+  }
+}
+
+
+//review section
+
+.review-container{
+    background: #23036A;
+    p{
+        @include body1();
+        color: #ffffff;
+       padding: 20px;
+       padding-bottom: 4rem;
+    }
+}
+
+//contact section
+
+.contact-section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    margin: auto;
+    h1{
+        @include header4();
+        width: 70%;
+        padding-bottom: 3rem;
+    }
+    .contact-wrapper{
+        img{
+            width: 50%;
+        }
+     
+        display: flex;
+        flex-direction: column;
+        .contact-textbox{
+            display: flex;
+            flex-direction: column;
+            .email-input{
+                padding: 10px;
+                margin-bottom: 1rem;
+            }
+            .msg-input{
+                padding: 10px;
+                resize: none;
+                padding-bottom: 10rem;
+
+            }
+        }
+
+    }
+}
+
+
+//footer section
+
+footer{
+    background-color: #23036A;
+    padding-top: 5rem;
+}

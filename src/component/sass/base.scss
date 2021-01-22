@@ -1,0 +1,87 @@
+// $Headline1: 96px;
+// $Headline2: 60px;
+// $Headline3: 48px;
+// $Headline4: 34px;
+// $Headline5: 24px;
+// $Headline6: 20px;
+
+// $Subtitle1: 16px;
+
+// $Subtitle2: 14px;
+
+// $Body1: 16px;
+// $Body2: 14px;
+
+// $button: 16px;
+
+// $caption: 12px;
+
+// $overline: 10px;
+
+@mixin header6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+@mixin header2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: #121212;
+}
+
+@mixin header4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 36px;
+  color: #000000;
+}
+
+@mixin header5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+@mixin body1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+@mixin subtitle1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+@mixin buttons {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  outline-color: #ffffff;
+  background: linear-gradient(125.66deg, #8468F5 2.75%, #EC74E7 88.2%);
+// filter: blur(19.2191px);
+// border-radius: 30px;
+//   color: #ffffff;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background: linear-gradient(87.86deg, #23036a -45.12%, #8468f5 74.37%);
+}

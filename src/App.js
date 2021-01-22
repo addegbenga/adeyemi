@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
 import Landing from "./component/home/Landing";
+import Navbar from "./component/nav/Navbar";
 
 function App() {
   return (
     <>
+      <Navbar />
       <Landing />
     </>
   );
