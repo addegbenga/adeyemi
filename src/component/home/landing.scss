@@ -1,76 +1,84 @@
 .landing-container {
-  display: flex;
-  flex-direction: column;
-  img {
-    padding-top: 3rem;
-  }
   div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // padding-bottom: 29rem;
+    padding-top: 5rem;
+    // background-color: red;
     width: 90%;
     margin: auto;
-    h1 {
-      @include header4();
-      margin-bottom: 2rem;
-    }
-    p {
-      @include subtitle1();
-    }
-    button {
-      @include buttons();
-      margin-top: 1rem;
+    h1{
+      margin-bottom: 1rem;
     }
   }
 }
 
-//about section
-.about-container {
-  padding-top: 4rem;
-  width: 90%;
-  margin: auto;
+.project-section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin-top: -5rem;
+
+  background-color: rgba(5, 166, 96, 0.03);
+
   h1 {
-    @include header5();
-    position: relative;
-    padding: 2px;
-    margin-bottom: 3rem;
-    &::after {
-      content: "";
-      bottom: -40%;
-      left: -10%;
-      position: absolute;
-      background-color: #ffa500;
-      width: 90%;
-      height: 0.1px;
-    }
+    text-align: center;
+    margin-bottom: 1rem;
   }
-  .about-wrapper {
-    p {
-      @include body1();
+  .about-number{
+    margin-bottom: 1rem;
+    font-size: 41px;
+    font-weight: 600;
+    color: #a0bcf810;
+    
     }
-    div {
+  .projects-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .project {
+      background: #ffffff;
+      border-radius: 5px;
+      // box-shadow: 0px 37.28305435180664px 13.914677619934082px 0px
+      //   rgba(0, 0, 0, 0);
+
+      // box-shadow: 0px 58.426979064941406px 111.12582397460938px 0px
+      //   rgba(0, 0, 0, 0.11);
+
       display: flex;
-      flex-direction: column-reverse;
-      button {
-        width: 40%;
-        margin-top: 2rem;
-        margin-left: -24px;
-        @include buttons();
-        padding: 10px;
+      // justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      padding-bottom: 5rem;
+      width: 100%;
+      margin-bottom: 3px;
+      p {
+        text-align: center;
       }
-      .tech-container {
-        ul {
-          display: flex;
-          width: 70%;
-          flex-wrap: wrap;
-          margin-top: 2rem;
-          li {
-            font-size: 20px;
-            background: #ffffff;
-            box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.3),
-              0px 16px 24px rgba(50, 50, 71, 0.08);
-            border: 1px solid rgb(249, 229, 255);
-            border-radius: 50px;
-            padding: 10px;
-            margin-right: 1rem;
-            margin-top: 0.5rem;
+      button {
+        margin-top: 1.5rem;
+        padding: 10px;
+        background-color: #05a660;
+        border: none;
+        outline-color: #e5f9f0;
+        color: #e5f9f0;
+        border-radius: 5px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-size: 20px;
+          font-weight: 500px;
+        }
+        span {
+          img {
+            width: 50px;
           }
         }
       }
@@ -78,86 +86,102 @@
   }
 }
 
-//projects section
-
-.project-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.about-section {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   h1 {
-    @include header5();
-    margin-bottom: 3rem;
-    margin-left: 1.5rem;
-    position: relative;
-    padding: 5px;
-    &::after {
-      content: "";
-      bottom: -40%;
-      left: -10%;
-      position: absolute;
-      background-color: #ffa500;
-      width: 90%;
-      height: 0.1px;
-    }
+    text-align: center;
   }
-  .project-container {
-    display: flex;
+  .about-number{
+  margin-bottom: 1rem;
+  font-size: 41px;
+  font-weight: 600;
+  color: #a0bcf810;
+  
   }
-}
-
-
-//review section
-
-.review-container{
-    background: #23036A;
-    p{
-        @include body1();
-        color: #ffffff;
-       padding: 20px;
-       padding-bottom: 4rem;
-    }
-}
-
-//contact section
-
-.contact-section{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .about-container {
     width: 90%;
     margin: auto;
-    h1{
-        @include header4();
-        width: 70%;
-        padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .about-placeholder {
+      width: 100%;
+      background: rgba(227, 255, 241, 1);
+      padding: 20px;
+      padding-right: 5rem;
+      margin-bottom: 1.5rem;
     }
-    .contact-wrapper{
-        img{
-            width: 50%;
-        }
-     
-        display: flex;
-        flex-direction: column;
-        .contact-textbox{
-            display: flex;
-            flex-direction: column;
-            .email-input{
-                padding: 10px;
-                margin-bottom: 1rem;
-            }
-            .msg-input{
-                padding: 10px;
-                resize: none;
-                padding-bottom: 10rem;
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
-            }
-        }
-
+      button {
+        background: #05a660;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        color: #e5f9f0;
+        outline-color: #e5f9f0;
+        margin-top: 1.5rem;
+      }
     }
+  }
 }
 
+.tech-section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: rgba(5, 166, 96, 0.05);
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .tech-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30%;
+    }
+  }
+}
 
-//footer section
+.contact-section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+    color: rgba(36, 83, 106, 0.51);
+  }
+  p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  button {
+    padding: 10px;
+    background-color: #05a660;
+    border: none;
+    border-radius: 5px;
+    color: #e5f9f0;
+  }
+}
 
-footer{
-    background-color: #23036A;
-    padding-top: 5rem;
+footer {
+  background-color: #2e4b48;
+  color: #e5f9f0;
 }

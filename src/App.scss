@@ -11,9 +11,20 @@
 li,a{
   text-decoration: none;
   list-style: none;
+  color:#2E4B48
 }
-
+p{
+  color: rgba(46, 75, 72, 0.86);
+}
+h1{
+  color:#2E4B48;
+  font-size: 34px;
+}
 img{
   width: 100%;
   object-fit: cover;
 }
+// img{
+//   width: 100%;
+//   object-fit: cover;
+// }

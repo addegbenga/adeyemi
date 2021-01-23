@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import mylogo from "../img/mylogo.svg";
 
 export default function Navbar() {
   return (
     <div className="nav-container">
-      <h1>Logo</h1>
+      <img src={mylogo} alt="logo"/>
+      <i className="fa fa-bars"></i>
       <ul>
         <li>
           <Link to="#">Home</Link>
