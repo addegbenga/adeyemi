@@ -6,9 +6,9 @@ import nodejs from "../img/nodejs.svg";
 import css3 from "../img/css3.svg";
 import reactPng from "../img/react.svg";
 import javascript from "../img/javascript.svg";
-import logo1 from "../img/marvel.png";
-import logo2 from "../img/jira_ops.png";
-import logo3 from "../img/yii 1.png";
+// import logo1 from "../img/marvel.png";
+// import logo2 from "../img/jira_ops.png";
+// import logo3 from "../img/yii 1.png";
 import logo4 from "../img/autodesk.png";
 
 export default function Landing() {
