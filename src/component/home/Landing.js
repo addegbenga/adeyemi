@@ -6,9 +6,9 @@ import nodejs from "../img/nodejs.svg";
 import css3 from "../img/css3.svg";
 import reactPng from "../img/react.svg";
 import javascript from "../img/javascript.svg";
-// import logo1 from "../img/marvel.png";
-// import logo2 from "../img/jira_ops.png";
-// import logo3 from "../img/yii 1.png";
+import logo1 from "../img/marvel.png";
+import logo2 from "../img/jira_ops.png";
+import logo3 from "../img/yii 1.png";
 import logo4 from "../img/autodesk.png";
 
 export default function Landing() {
@@ -36,7 +36,7 @@ export default function Landing() {
               <span>
                 <img src={logo4} alt="stock" />
               </span>
-              <h1>KYBERCORE</h1>
+              <h1>QWIKKER</h1>
             </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
@@ -44,49 +44,55 @@ export default function Landing() {
             </p>
             <button className="demo">View Demo</button>
           </div>
-          {/* <div  className="project">
+         
+        </div>
+        <div className="projects-container">
+          <div className="project">
             <div>
               <span>
-                <img src={logo3} alt="deck" />
+                <img src={logo1} alt="stock" />
               </span>
-              <h1>YiCHECH</h1>
+              <h1>CYPHER</h1>
             </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
               aliquam!
             </p>
-            <p  className="development">In developement</p>
-            <button  className="demo">View Demo</button>
-          </div> */}
-          {/* <div  className="project">
+            <button className="demo">View Demo</button>
+          </div>
+         
+        </div>
+        <div className="projects-container">
+          <div className="project">
             <div>
               <span>
-                <img src={logo2} alt="docker" />
+                <img src={logo2} alt="stock" />
               </span>
-              <h1>BREAD COMB</h1>
+              <h1>DUCKER</h1>
             </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
               aliquam!
             </p>
-            <p  className="development">In developement</p>{" "}
+            <button className="demo">View Demo</button>
           </div>
-          <button  className="demo">View Demo</button>
-        </div> */}
-        {/* <div  className="project">
-          <div>
-            <span>
-              <img src={logo1} alt="kuber" />
-            </span>
-            <h1>ALIAS ADDON</h1>
+         
+        </div>
+        <div className="projects-container">
+          <div className="project">
+            <div>
+              <span>
+                <img src={logo3} alt="stock" />
+              </span>
+              <h1>TOKYO</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
+              aliquam!
+            </p>
+            <button className="demo">View Demo</button>
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-            aliquam!
-          </p>
-          <p  className="development">In developement</p>
-          <button  className="demo">View Demo</button>
-        </div> */}
+         
         </div>
       </section>
       <section className="about-section">
@@ -130,27 +136,33 @@ export default function Landing() {
       </section>
 
       <footer>
-        <div>
+        <div className="footer-container">
+
+        <div className="footer-links">
           <ul>
             <li>Home</li>
             <li>Contact</li>
             <li>Testimonials</li>
           </ul>
         </div>
-        <div>
+        <div  className="footer-links">
           <ul>
             <li>Instagram</li>
             <li>Twitter</li>
             <li>General</li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>logo</li>
-            <li>logo</li>
-            <li>logo</li>
+      
+          <ul className="social-links">
+            <li><i className="fa fa-instagram "></i></li>
+            <li><i className="fa fa-twitter "></i></li>
+            <li><i className="fa fa-whatsapp "></i></li>
+            <li><i className="fa fa-github "></i></li>
+
           </ul>
+     
         </div>
+
       </footer>
     </section>
   );
