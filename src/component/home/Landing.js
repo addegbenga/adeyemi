@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import mockup from "../img/mockup.svg";
 import about from "../img/about.svg";
 import html5 from "../img/html5.svg";
@@ -15,8 +15,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
 
 export default function Landing() {
-  const [images, setImage] = useState(null);
-
   useEffect(() => {});
   const header = useRef(null);
   const imageRef = useRef(null);
@@ -52,7 +50,7 @@ export default function Landing() {
 
   const imgOptions = {
     threshold: 0,
-    rootMargin:"0px 0px 100px 0px"
+    rootMargin: "0px 0px 100px 0px",
   };
   function preloadImage(img) {
     const src = img.getAttribute("data-src");
