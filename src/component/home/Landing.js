@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import mockup from "../img/mockup.svg";
 import about from "../img/about.svg";
 import html5 from "../img/html5.svg";
@@ -15,9 +15,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
 
 export default function Landing() {
+  const [images, setImage] = useState(null);
+
+  useEffect(() => {});
   const header = useRef(null);
+  const imageRef = useRef(null);
   const subheader = useRef(null);
   const svgDesign = useRef(null);
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -25,7 +31,7 @@ export default function Landing() {
     tl.from(header.current, {
       duration: 0.7,
       opacity: 0,
-      y:-10,
+      y: -10,
       ease: Power3,
       stagger: {
         amount: 2,
@@ -39,10 +45,36 @@ export default function Landing() {
       })
       .from(svgDesign.current, {
         duration: 1,
-        opacity:0,
+        opacity: 0,
         y: 20,
       });
+  }, []);
+
+  const imgOptions = {
+    threshold: 0,
+    rootMargin:"0px 0px 100px 0px"
+  };
+  function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if (!src) {
+      return;
+    }
+    img.src = src;
+  }
+  useEffect(() => {
+    const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          preloadImage(entry.target);
+          imgObserver.unobserve(entry.target);
+        }
+      });
+    }, imgOptions);
+    imgObserver.observe(imageRef.current);
   });
+
   return (
     <section>
       <div className="landing-container">
@@ -59,7 +91,12 @@ export default function Landing() {
           </p>
         </div>
         <div className="mock-container" ref={svgDesign}>
-          <img className="mock-img" src={mockup} alt="contact me"></img>
+          <img
+            className="mock-img"
+            data-src={mockup}
+            alt="contact me"
+            ref={imageRef}
+          ></img>
         </div>
       </div>
       <section className="project-section">

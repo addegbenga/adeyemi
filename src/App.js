@@ -6,7 +6,9 @@ function App() {
   const [loaded, setLoaded] = useState(true);
 
   useEffect(() => {
-    setLoaded(false);
+    setTimeout(() => {
+      setLoaded(false);
+    }, 1000);
   }, []);
   return (
     <>
