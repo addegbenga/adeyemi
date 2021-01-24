@@ -28,6 +28,7 @@
 .sidebar-container {
   position: fixed;
   top: 5%;
+  z-index: 3;
   width: 100%;
   background: #f8fffb;
   ul {
