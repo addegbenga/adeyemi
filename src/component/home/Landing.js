@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import mockup from "../img/mockup.svg";
 import about from "../img/about.svg";
 import html5 from "../img/html5.svg";
@@ -11,19 +11,54 @@ import logo2 from "../img/jira_ops.png";
 import logo3 from "../img/yii 1.png";
 import logo4 from "../img/autodesk.png";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, Power3 } from "gsap";
+
 export default function Landing() {
+  const header = useRef(null);
+  const subheader = useRef(null);
+  const svgDesign = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl = gsap.timeline();
+    tl.from(header.current, {
+      duration: 0.7,
+      opacity: 0,
+      y:-10,
+      ease: Power3,
+      stagger: {
+        amount: 2,
+        ease: Power3.easeIn,
+      },
+    })
+      .from(subheader.current, {
+        duration: 1,
+        opacity: 0,
+        y: 30,
+      })
+      .from(svgDesign.current, {
+        duration: 1,
+        opacity:0,
+        y: 20,
+      });
+  });
   return (
     <section>
       <div className="landing-container">
-        <div>
-          <h1> Creating beutifully websites design for your business.</h1>
-          <p>
+        <div className="landing-content">
+          <h1 ref={header}>
+            {" "}
+            Creating beutifully websites design for your business.
+          </h1>
+          <p ref={subheader}>
             {" "}
             lorem ipsume is some words you have to put out ther to get some
             audienc you knlorem ipsume is some words you have to put out ther to
             get some audienc .
           </p>
-
+        </div>
+        <div className="mock-container" ref={svgDesign}>
           <img className="mock-img" src={mockup} alt="contact me"></img>
         </div>
       </div>
@@ -44,9 +79,7 @@ export default function Landing() {
             </p>
             <button className="demo">View Demo</button>
           </div>
-         
-        </div>
-        <div className="projects-container">
+
           <div className="project">
             <div>
               <span>
@@ -60,9 +93,7 @@ export default function Landing() {
             </p>
             <button className="demo">View Demo</button>
           </div>
-         
-        </div>
-        <div className="projects-container">
+
           <div className="project">
             <div>
               <span>
@@ -76,9 +107,7 @@ export default function Landing() {
             </p>
             <button className="demo">View Demo</button>
           </div>
-         
-        </div>
-        <div className="projects-container">
+
           <div className="project">
             <div>
               <span>
@@ -92,7 +121,6 @@ export default function Landing() {
             </p>
             <button className="demo">View Demo</button>
           </div>
-         
         </div>
       </section>
       <section className="about-section">
@@ -121,8 +149,6 @@ export default function Landing() {
           <img src={reactPng} alt="tech"></img>
           <img src={css3} alt="tech"></img>
           <img src={nodejs} alt="tech"></img>
-          {/* <img src="" alt="tech"></img>
-          <img src="" alt="tech"></img> */}
         </div>
       </section>
 
@@ -137,32 +163,36 @@ export default function Landing() {
 
       <footer>
         <div className="footer-container">
+          <div className="footer-links">
+            <ul>
+              <li>Home</li>
+              <li>Contact</li>
+              <li>Testimonials</li>
+            </ul>
+          </div>
+          <div className="footer-links">
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>General</li>
+            </ul>
+          </div>
 
-        <div className="footer-links">
-          <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>Testimonials</li>
-          </ul>
-        </div>
-        <div  className="footer-links">
-          <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>General</li>
-          </ul>
-        </div>
-      
           <ul className="social-links">
-            <li><i className="fa fa-instagram "></i></li>
-            <li><i className="fa fa-twitter "></i></li>
-            <li><i className="fa fa-whatsapp "></i></li>
-            <li><i className="fa fa-github "></i></li>
-
+            <li>
+              <i className="fa fa-instagram "></i>
+            </li>
+            <li>
+              <i className="fa fa-twitter "></i>
+            </li>
+            <li>
+              <i className="fa fa-whatsapp "></i>
+            </li>
+            <li>
+              <i className="fa fa-github "></i>
+            </li>
           </ul>
-     
         </div>
-
       </footer>
     </section>
   );

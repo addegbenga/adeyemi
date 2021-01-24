@@ -1,5 +1,5 @@
 .landing-container {
-  div {
+  .landing-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +14,11 @@
       margin-bottom: 1rem;
     }
   }
+  .mock-container{
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }
 
 .project-section {
@@ -26,7 +31,6 @@
   h1 {
     text-align: center;
     color: rgba(36, 83, 106, 0.51);
-   
   }
   .about-number {
     margin-bottom: 1rem;
@@ -39,8 +43,8 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+
     .project {
-     
       border-radius: 15px;
       background: #ffffff;
 
@@ -53,6 +57,7 @@
       align-items: center;
       padding: 20px;
       padding-bottom: 5rem;
+
       width: 100%;
       margin-bottom: 1rem;
 
@@ -106,9 +111,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   background-color: #ffffff;
-   box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.3), 0px 16px 24px rgba(50, 50, 71, 0.08);
-   
+    background-color: #ffffff;
+    box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.3),
+      0px 16px 24px rgba(50, 50, 71, 0.08);
+
     align-items: center;
     .about-placeholder {
       width: 100%;
@@ -161,7 +167,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  
+
     img {
       width: 30%;
       margin-left: 5px;
@@ -198,7 +204,9 @@
 
 footer {
   background-color: #2e4b48;
+
   padding: 10px;
+  padding-top: 2rem;
   // padding-top: 10rem;
   .footer-container {
     display: flex;
@@ -209,7 +217,7 @@ footer {
         li {
           color: #e5f9f0;
           line-height: 1.5rem;
-          font-size: 14px;
+          font-size: 18px;
         }
       }
     }

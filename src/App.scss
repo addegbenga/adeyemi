@@ -1,30 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap");
 @import "./component/sass/component.scss";
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Alegreya Sans", sans-serif;
 }
-li,a{
+li,
+a {
   text-decoration: none;
   list-style: none;
-  color:#2E4B48
+  color: #2e4b48;
 }
-p{
+li,
+a:hover {
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
+}
+p {
   color: rgba(46, 75, 72, 0.86);
 }
-h1{
-  color:#2E4B48;
+h1 {
+  color: #2e4b48;
   font-size: 38.5px;
 }
-img{
+img {
   width: 100%;
   object-fit: cover;
 }
-p{
+p {
   font-size: 18.5px;
 }
 // img{

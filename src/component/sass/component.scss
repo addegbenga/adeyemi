@@ -2,3 +2,11 @@
 @import "../home/landing.scss";
 @import "../loading/loading.scss";
 @import "../nav/navbar.scss";
+@import "../home/landingmedia.scss";
+
+
+.landing-container{
+    div{
+        flex-direction: row;
+    }
+}
