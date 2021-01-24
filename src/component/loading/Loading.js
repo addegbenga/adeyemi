@@ -1,9 +1,13 @@
 import React from "react";
+import gif from "../img/giphy.gif"
 
 export default function Loading() {
   return (
     <div className="loading-container">
-     <h1>LOADING...</h1>
+      <img
+        src={gif}
+        alt="loading"
+      ></img>
     </div>
   );
 }

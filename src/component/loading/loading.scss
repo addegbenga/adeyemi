@@ -1,13 +1,12 @@
 .loading-container {
-  width: 100vw;
-  height: 100vh;
-
-  background: linear-gradient(333.38deg, #2ccc9c 3.56%, #4abbba 180%);
-  border: 8.01939px solid #2f4949;
+  // background-color: rgb(8, 17, 31);
   display: flex;
   justify-content: center;
   align-items: center;
-  h1 {
-    color: #ffffff;
-  }
+  width:100vw;
+  height:100vh;
+
+  // img {
+  //   width: 100%;
+  // }
 }
