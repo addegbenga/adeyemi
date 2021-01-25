@@ -213,16 +213,16 @@ export default function Landing() {
 
           <ul className="social-links">
             <li>
-              <i className="fa fa-instagram fa-2x "></i>
+              <i className="fa fa-instagram "></i>
             </li>
             <li>
-              <i className="fa fa-twitter fa-2x  "></i>
+              <i className="fa fa-twitter  "></i>
             </li>
             <li>
-              <i className="fa fa-whatsapp fa-2x  "></i>
+              <i className="fa fa-whatsapp "></i>
             </li>
             <li>
-              <i className="fa fa-github fa-2x  "></i>
+              <i className="fa fa-github  "></i>
             </li>
           </ul>
         </div>

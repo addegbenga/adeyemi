@@ -213,12 +213,13 @@ footer {
     display: flex;
     flex-direction: column;
     .footer-links {
+      padding: 10px;
       margin-bottom: 2rem;
       ul {
         li {
           color: #e5f9f0;
           line-height: 1.5rem;
-          font-size: 14px;
+          font-size: 17px;
         }
       }
     }
