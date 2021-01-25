@@ -11,7 +11,7 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  color: #2e4b48;
+  color: #1d4556;
 }
 li,
 a:hover {
@@ -20,11 +20,9 @@ a:hover {
 button:hover{
   cursor: pointer;
 }
-p {
-  color: rgba(46, 75, 72, 0.86);
-}
+
 h1 {
-  color: #2e4b48;
+  color: #1d4556;
   font-size: 38.5px;
 }
 img {
@@ -36,7 +34,8 @@ img {
   min-height: 800px;
 }
 p {
-  font-size: 18.5px;
+  font-size: 16px;
+  color: #1d4556dd;
 }
 // img{
 //   width: 100%;

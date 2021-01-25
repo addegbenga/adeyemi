@@ -1,31 +1,54 @@
 import React, { useRef, useEffect } from "react";
-import { gsap, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, Power4 } from "gsap";
 
-export default function Sidebar() {
+export default function Sidebar({ setOpen, isOpen, handleOpen }) {
   const sidenavRef = useRef(null);
   const sideLink = useRef(null);
+  const tl = gsap.timeline({ paused: true, reversed: true });
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.from(sidenavRef.current, {
-      duration: 0.7,
-      ease: Power3,
-      // opacity: 0.3,
-      x: 100,
-    }).from(sideLink.current, {
+    gsap.registerPlugin(ScrollTrigger);
+    // function play(tween){
+    //   tween.reversed() ? tween.play() : tween.reverse();
+    // }
+    tl.to(sidenavRef.current, {
+      ease: Power4.easeInOut,
       duration: 0.5,
+      onStart: () => {
+        console.log("start");
+      },
+      onComplete: () => {
+        console.log("ended");
+      },
+      css: {
+        display: "block",
+        opacity: 1,
+      },
+    }).from(sideLink.current, {
+      duration: 0.3,
       opacity: 0,
-      ease: Power3,
-      y:50
-    }, );
-  }, []);
+      y: 40,
+    });
+
+    isOpen === true && tl.play();
+  }, [tl, isOpen]);
   return (
-    <div className="sidebar-container" ref={sidenavRef}>
-      <ul ref={sideLink}>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
-        <li>Projects</li>
-      </ul>
+    <div
+      className="sidebar-container"
+      ref={sidenavRef}
+      onClick={() => {
+        setOpen(false);
+        isOpen === false && tl.reverse();
+      }}
+    >
+      <div>
+        <ul ref={sideLink}>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About</li>
+          <li>Projects</li>
+        </ul>
+      </div>
     </div>
   );
 }

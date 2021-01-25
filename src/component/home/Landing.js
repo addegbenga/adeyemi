@@ -21,8 +21,6 @@ export default function Landing() {
   const subheader = useRef(null);
   const svgDesign = useRef(null);
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline();
@@ -215,16 +213,16 @@ export default function Landing() {
 
           <ul className="social-links">
             <li>
-              <i className="fa fa-instagram "></i>
+              <i className="fa fa-instagram fa-2x "></i>
             </li>
             <li>
-              <i className="fa fa-twitter "></i>
+              <i className="fa fa-twitter fa-2x  "></i>
             </li>
             <li>
-              <i className="fa fa-whatsapp "></i>
+              <i className="fa fa-whatsapp fa-2x  "></i>
             </li>
             <li>
-              <i className="fa fa-github "></i>
+              <i className="fa fa-github fa-2x  "></i>
             </li>
           </ul>
         </div>
