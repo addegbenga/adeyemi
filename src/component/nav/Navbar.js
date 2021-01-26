@@ -64,12 +64,11 @@ export default function Navbar() {
       </div>
       <div className="nav-container">
         <img src={mylogo} alt="logo" />
-        <div className="nav-toggle" onClick={() => tl.play()}>x
+        <div className="nav-toggle" onClick={() => tl.play()}>
           <i
-            className="fa fa-bars  "
+            className="fa fa-bars"
             style={{
-              backgroundImage:
-                "linearGradient( 415deg, #3bb78f 0%, #0bab64 74%)",
+              color: "#0bab64",
             }}
           ></i>
         </div>
