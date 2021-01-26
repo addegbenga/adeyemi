@@ -57,13 +57,15 @@ export default function Navbar() {
             <li>Contact</li>
             <li>About</li>
             <li>Projects</li>
+            <li>Faq</li>
+            <li>Socials</li>
           </ul>
         </div>
       </div>
       <div className="nav-container">
         <img src={mylogo} alt="logo" />
         <div className="nav-toggle" onClick={() => tl.play()}>
-          <i className="fa fa-bars "></i>
+          <i className="fa fa-bars  " style={{color:"rgba(44, 204, 156, 1)"}}></i>
         </div>
         <ul>
           <li>

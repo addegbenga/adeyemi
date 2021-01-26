@@ -14,7 +14,7 @@ import logo4 from "../img/autodesk.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
 
-export default function Landing() {
+export default function Landing({ setForm }) {
   useEffect(() => {});
   const header = useRef(null);
   const imageRef = useRef(null);
@@ -191,7 +191,7 @@ export default function Landing() {
           Give your sites the edge Create amazing experiences for the web in
           record time
         </p>
-        <button>Contact Me</button>
+        <button onClick={() => setForm(true)}>Contact Me</button>
       </section>
 
       <footer>
