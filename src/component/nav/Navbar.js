@@ -68,7 +68,7 @@ export default function Navbar() {
           <i
             className="fa fa-bars"
             style={{
-              color: "#0bab64",
+              color: "#2CCC9C",
             }}
           ></i>
         </div>
