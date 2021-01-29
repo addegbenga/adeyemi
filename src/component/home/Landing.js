@@ -77,8 +77,10 @@ export default function Landing({ setForm }) {
         <div className="landing-content">
           <h1 ref={header}> Creating beutifully crafted websites.</h1>
           <p ref={subheader}>
-            My aim is to make the web a beutifull place creating the balance
-            between intuitive design and functionality...
+            Hey there i"m a full stack developer specialised in NodeJS on the
+            backend, javascript and React/Redux for frontend developement My aim
+            is to make the web a beutifull place creating the balance between
+            intuitive design and functionality...
           </p>
           <button>LETS TALK</button>
         </div>
@@ -162,12 +164,12 @@ export default function Landing({ setForm }) {
 
             <p>
               Enthusiastic and self-moltivated full stack web developer with 3 +
-              years of experience. I love buliding stuff ranging from front to
-              backend web applications.. in my previous roles designed a
-              scalable database schema using mongodb and a efficient restfull
-              api architecture using nodejs. when i am not coding i play chess
-              or console games. I love what i do and i"m open to work
-              opportunites.
+              years of experience. specialised in Nodejs for backend, javascript
+              and React/Redux for frontend development and Mongodb/sequelize for
+              database applications. in my previous roles designed a scalable
+              database schema using mongodb and a efficient restfull api
+              architecture using nodejs. when i am not coding i play chess or
+              console games. I love what i do and i"m open to work opportunites.
             </p>
             <button>Download resume</button>
           </div>
