@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import mockup from "../img/mockup.svg";
+import mockup from "../img/drey.svg";
 import about from "../img/about.svg";
 import html5 from "../img/html5.svg";
 import nodejs from "../img/nodejs.svg";
@@ -75,16 +75,12 @@ export default function Landing({ setForm }) {
     <section>
       <div className="landing-container">
         <div className="landing-content">
-          <h1 ref={header}>
-            {" "}
-            Creating beutifully websites design for your business.
-          </h1>
+          <h1 ref={header}> Creating beutifully crafted websites.</h1>
           <p ref={subheader}>
-            {" "}
-            lorem ipsume is some words you have to put out ther to get some
-            audienc you knlorem ipsume is some words you have to put out ther to
-            get some audienc .
+            My aim is to make the web a beutifull place creating the balance
+            between intuitive design and functionality...
           </p>
+          <button>LETS TALK</button>
         </div>
         <div className="mock-container" ref={svgDesign}>
           <img
@@ -107,8 +103,7 @@ export default function Landing({ setForm }) {
               <h1>QWIKKER</h1>
             </div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              aliquam!
+              A digital business card platform made for creatives and creators
             </p>
             <button className="demo">View Demo</button>
           </div>
@@ -118,11 +113,11 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo1} alt="stock" />
               </span>
-              <h1>CYPHER</h1>
+              <h1>TUTORHUB</h1>
             </div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              aliquam!
+              A Learning platform that allows students to connect to tutors in
+              there neigbourhood and so more
             </p>
             <button className="demo">View Demo</button>
           </div>
@@ -132,11 +127,11 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo2} alt="stock" />
               </span>
-              <h1>DUCKER</h1>
+              <h1>AGENT NOW</h1>
             </div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              aliquam!
+              An agency platform that connects those seeking for a new apartment
+              to a nearby agents in no time.
             </p>
             <button className="demo">View Demo</button>
           </div>
@@ -146,12 +141,9 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo3} alt="stock" />
               </span>
-              <h1>TOKYO</h1>
+              <h1>WESTREAM</h1>
             </div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              aliquam!
-            </p>
+            <p>Video streaming platform</p>
             <button className="demo">View Demo</button>
           </div>
         </div>
@@ -164,10 +156,18 @@ export default function Landing({ setForm }) {
             <img src={about} alt="about-me"></img>
           </div>
           <div className="about-info">
+            {/* Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Ipsum fugiat modi dolorem autem
+              et, ipsa facilis debitis quam libero quae! */}
+
             <p>
-              Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Ipsum fugiat modi dolorem autem
-              et, ipsa facilis debitis quam libero quae!
+              Enthusiastic and self-moltivated full stack web developer with 3 +
+              years of experience. I love buliding stuff ranging from front to
+              backend web applications.. in my previous roles designed a
+              scalable database schema using mongodb and a efficient restfull
+              api architecture using nodejs. when i am not coding i play chess
+              or console games. I love what i do and i"m open to work
+              opportunites.
             </p>
             <button>Download resume</button>
           </div>
@@ -186,10 +186,10 @@ export default function Landing({ setForm }) {
       </section>
 
       <section className="contact-section">
-        <h1> SERVER LESS, DO MORE</h1>
+        <h1>LIKE WHAT YOU SEE</h1>
         <p>
-          Give your sites the edge Create amazing experiences for the web in
-          record time
+          I"m always open to discussing about work or partnership
+          opportunites....
         </p>
         <button onClick={() => setForm(true)}>Contact Me</button>
       </section>
@@ -213,16 +213,20 @@ export default function Landing({ setForm }) {
 
           <ul className="social-links">
             <li>
-              <i className="fa fa-instagram "></i>
+              <a href="https://wa.me/08086771870">
+                {" "}
+                <i className="fa fa-whatsapp "></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-twitter  "></i>
+              <a href="https://twitter.com/addegbenga">
+                <i className="fa fa-twitter  "></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-whatsapp "></i>
-            </li>
-            <li>
-              <i className="fa fa-github  "></i>
+              <a href="https://github.com/addegbenga">
+                <i className="fa fa-github  "></i>
+              </a>
             </li>
           </ul>
         </div>

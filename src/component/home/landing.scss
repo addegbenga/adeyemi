@@ -1,5 +1,7 @@
 .landing-container {
+
   .landing-content {
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +14,10 @@
     margin: auto;
     h1 {
       margin-bottom: 1rem;
+      font-size: 30px;
+    }
+    button{
+      display: none;
     }
   }
   .mock-container{
@@ -133,6 +139,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      p{
+        padding: 0 20px;
+      }
 
       button {
         background: rgba(44, 204, 156, 1);
@@ -184,6 +193,7 @@
   align-items: center;
   h1 {
     text-align: center;
+    font-size: 34px;
     color: rgba(36, 83, 106, 0.51);
   }
   p {
@@ -234,11 +244,13 @@ footer {
 
     li {
    
+   
       .fa-instagram,
       .fa-twitter,
       .fa-whatsapp,
       .fa-github {
         // background: rgba(36, 83, 106, 0.51);
+        background-color: rgba(44, 204, 156, 1);
         color: white;
         margin-right: 2rem;
         display: flex;
