@@ -1,20 +1,40 @@
-import React, { useEffect, useRef } from "react";
-import mockup from "../img/drey.svg";
-import about from "../img/about.svg";
-import html5 from "../img/html5.svg";
-import nodejs from "../img/nodejs.svg";
-import css3 from "../img/css3.svg";
-import reactPng from "../img/react.svg";
-import javascript from "../img/javascript.svg";
-import logo1 from "../img/marvel.png";
-import logo2 from "../img/jira_ops.png";
-import logo3 from "../img/yii 1.png";
-import logo4 from "../img/autodesk.png";
+import React, { useEffect, useRef, useState } from "react";
+import mockup from "../img/new mockup.svg";
+import mockupDp from "../img/Ellipse 5.svg";
+import logo1 from "../img/p1 1.svg";
+import logo2 from "../img/p4 1 (1).svg";
+import logo3 from "../img/portfolio-details.svg";
+import logo4 from "../img/p2 2.svg";
+import laptop from "../img/laptop.svg";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
 
 export default function Landing({ setForm }) {
+  const [intro, setIntro] = useState([
+    {
+      msg: ` Enthusiastic and self-moltivated full stack web developer with 3
+      + years of experience`,
+      img: mockupDp,
+    },
+
+    {
+      msg: "msg two",
+    },
+    {
+      msg: "msg three",
+    },
+  ]);
+
+  // setIntro(null)
+
+  // const increement = () => {
+  //   setIntro();
+  //   setCount(count + 1);
+  // };
+  // const decreement = () => {
+  //   setCount(count - 1);
+  // };
   useEffect(() => {});
   const header = useRef(null);
   const imageRef = useRef(null);
@@ -73,24 +93,43 @@ export default function Landing({ setForm }) {
 
   return (
     <section>
-      <div className="landing-container">
+      <div intro={setIntro}className="landing-container">
         <div className="landing-content">
-          <h1 ref={header}> Creating beutifully crafted websites.</h1>
+          <h1 ref={header}> Creating beutifully crafted web design.</h1>
           <p ref={subheader}>
-            Hey there i"m a full stack developer specialised in NodeJS on the
+            {/* Hey there i"m a full stack developer specialised in NodeJS on the
             backend, javascript and React/Redux for frontend developement My aim
             is to make the web a beutifull place creating the balance between
-            intuitive design and functionality...
+            intuitive design and functionality... */}
+            lorem ipsume is some words you have to put out ther to get some
+            audienc you knlorem ipsume is
           </p>
           <button>LETS TALK</button>
-        </div>
-        <div className="mock-container" ref={svgDesign}>
-          <img
-            className="mock-img"
-            data-src={mockup}
-            alt="contact me"
-            ref={imageRef}
-          ></img>
+          <div className="mock-container" ref={svgDesign}>
+            <div className="mock-up-content">
+              <img className="mockdp" src={mockupDp} alt="dp" />
+              <div>one</div>
+              <div>one</div>
+              <div>one</div>
+              <ul>
+                <a href="twitter.com/addegbenga">
+                  <i className="fa fa-twitter" style={{ color: "white" }}></i>
+                </a>
+                <a href="twitter.com/addegbenga">
+                  <i className="fa fa-github" style={{ color: "white" }}></i>
+                </a>
+                <a href="twitter.com/addegbenga">
+                  <i className="fa fa-linkedin" style={{ color: "white" }}></i>
+                </a>
+              </ul>
+            </div>
+            <img
+              className="mock-img"
+              data-src={mockup}
+              alt="contact me"
+              ref={imageRef}
+            ></img>
+          </div>
         </div>
       </div>
       <section className="project-section">
@@ -104,10 +143,12 @@ export default function Landing({ setForm }) {
               </span>
               <h1>QWIKKER</h1>
             </div>
-            <p>
-              A digital business card platform made for creatives and creators
-            </p>
-            <button className="demo">View Demo</button>
+            <div className="project-info">
+              <p>
+                A digital business card platform made for creatives and creators
+              </p>
+              <button className="demo">View Demo</button>
+            </div>
           </div>
 
           <div className="project">
@@ -117,11 +158,13 @@ export default function Landing({ setForm }) {
               </span>
               <h1>TUTORHUB</h1>
             </div>
-            <p>
-              A Learning platform that allows students to connect to tutors in
-              there neigbourhood and so more
-            </p>
-            <button className="demo">View Demo</button>
+            <div className="project-info">
+              <p>
+                A Learning platform that allows students to connect to tutors in
+                there neigbourhood and so more
+              </p>
+              <button className="demo">View Demo</button>
+            </div>
           </div>
 
           <div className="project">
@@ -131,11 +174,13 @@ export default function Landing({ setForm }) {
               </span>
               <h1>AGENT NOW</h1>
             </div>
-            <p>
-              An agency platform that connects those seeking for a new apartment
-              to a nearby agents in no time.
-            </p>
-            <button className="demo">View Demo</button>
+            <div className="project-info">
+              <p>
+                An agency platform that connects those seeking for a new
+                apartment to a nearby agents in no time.
+              </p>
+              <button className="demo">View Demo</button>
+            </div>
           </div>
 
           <div className="project">
@@ -145,33 +190,35 @@ export default function Landing({ setForm }) {
               </span>
               <h1>WESTREAM</h1>
             </div>
-            <p>Video streaming platform</p>
-            <button className="demo">View Demo</button>
+            <div className="project-info">
+              <p>Video streaming platform</p>
+              <button className="demo">View Demo</button>
+            </div>
           </div>
         </div>
       </section>
       <section className="about-section">
-        <h1>About me</h1>
+        {/* <h1>About me</h1> */}
         <p className="about-number">02</p>
         <div className="about-container">
           <div className="about-placeholder">
-            <img src={about} alt="about-me"></img>
-          </div>
-          <div className="about-info">
-            {/* Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Ipsum fugiat modi dolorem autem
-              et, ipsa facilis debitis quam libero quae! */}
+            <img src={laptop} alt="about-me"></img>
+            <div className="about-info">
+              <img className="abt-img" src={mockupDp} alt="avatar" />
+              <p>
+                {/* Enthusiastic and self-moltivated full stack web developer with 3
+                + years of experience. specialised in Nodejs for backend,
+                javascript and React/Redux for frontend development and
+                Mongodb/sequelize for database applications. in my previous
+                roles designed a scalable database schema using mongodb and a
+                efficient restfull api architecture using nodejs. when i am not
+                coding i play chess or console games. I love what i do and i"m
+                open to work opportunites. */}
+                {intro[0].msg}
+              </p>
 
-            <p>
-              Enthusiastic and self-moltivated full stack web developer with 3 +
-              years of experience. specialised in Nodejs for backend, javascript
-              and React/Redux for frontend development and Mongodb/sequelize for
-              database applications. in my previous roles designed a scalable
-              database schema using mongodb and a efficient restfull api
-              architecture using nodejs. when i am not coding i play chess or
-              console games. I love what i do and i"m open to work opportunites.
-            </p>
-            <button>Download resume</button>
+              <button>Download resume</button>
+            </div>
           </div>
         </div>
       </section>
@@ -179,11 +226,14 @@ export default function Landing({ setForm }) {
       <section className="tech-section">
         <h1>Technologies</h1>
         <div className="tech-container">
-          <img src={html5} alt="tech"></img>
-          <img src={javascript} alt="tech"></img>
-          <img src={reactPng} alt="tech"></img>
-          <img src={css3} alt="tech"></img>
-          <img src={nodejs} alt="tech"></img>
+          <p>JAVASCRIPT</p>
+          <p>NODE JS</p>
+          <p>REACT</p>
+          <p>SOCKETS.IO</p>
+          <p>MONGODB</p>
+          <p>CSS3</p>
+          <p>HTML5</p>
+          <p>SASS</p>
         </div>
       </section>
 
