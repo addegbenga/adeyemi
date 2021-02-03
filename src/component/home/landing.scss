@@ -69,6 +69,12 @@
 
 .project-section {
   background-color: #ffffff;
+  .about-number{
+    font-size: 2rem;
+    color: #20C5D3;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
   h1 {
     text-align: center;
     font-size: 24px;
@@ -116,14 +122,22 @@
           // background-color: #22faa7af;
           background-color: #f5f7f8;
           border-radius: 5px;
+          color: #20C5D3;
           border: none;
         }
+       
       }
     }
   }
 }
 
 .about-section {
+  .about-number{
+    font-size: 2rem;
+    color: #20C5D3;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
   padding-top: 3rem;
   .about-container {
     position: relative;
@@ -224,8 +238,8 @@
   h1 {
     text-align: center;
     font-size: 34px;
-    // color: rgba(0, 0, 0, 0.904);
-    color: rgba(36, 83, 106, 0.51);
+    color: rgba(0, 0, 0, 0.801);
+  
   }
   p {
     padding-top: 2rem;
@@ -233,7 +247,7 @@
     font-size: 24px;
     // font-weight: 600;
     text-align: center;
-    // color: rgb(63, 63, 63);
+    color: rgb(63, 63, 63);
   }
   button {
     padding: 10px;
@@ -281,6 +295,8 @@ footer {
       .fa-github {
         // background: rgba(36, 83, 106, 0.51);
         background-color: #c4c4c4;
+       
+       background-color: #20c4d39a;;
         color: white;
         margin-right: 1rem;
         display: flex;
