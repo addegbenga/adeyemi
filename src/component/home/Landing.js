@@ -93,7 +93,7 @@ export default function Landing({ setForm }) {
 
   return (
     <section>
-      <div intro={setIntro}className="landing-container">
+      <div intro={setIntro} className="landing-container">
         <div className="landing-content">
           <h1 ref={header}> Creating beutifully crafted web design.</h1>
           <p ref={subheader}>
@@ -108,18 +108,19 @@ export default function Landing({ setForm }) {
           <div className="mock-container" ref={svgDesign}>
             <div className="mock-up-content">
               <img className="mockdp" src={mockupDp} alt="dp" />
-              <div>one</div>
-              <div>one</div>
-              <div>one</div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
               <ul>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-twitter" style={{ color: "white" }}></i>
+                  <i className="fa fa-twitter fa-lg" style={{ color: "white" }}></i>
                 </a>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-github" style={{ color: "white" }}></i>
+                  <i className="fa fa-github fa-lg" style={{ color: "white" }}></i>
                 </a>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-linkedin" style={{ color: "white" }}></i>
+                  <i className="fa fa-linkedin fa-lg" style={{ color: "white" }}></i>
                 </a>
               </ul>
             </div>
@@ -141,9 +142,10 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo4} alt="stock" />
               </span>
-              <h1>QWIKKER</h1>
+              <h1 className="project-mobile-title">QWIKKER</h1>
             </div>
             <div className="project-info">
+            <h1 className="project-lg-title">QWIKERR</h1>
               <p>
                 A digital business card platform made for creatives and creators
               </p>
@@ -156,9 +158,10 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo1} alt="stock" />
               </span>
-              <h1>TUTORHUB</h1>
+              <h1 className="project-mobile-title">TUTORHUB</h1>
             </div>
             <div className="project-info">
+            <h1 className="project-lg-title">TUTOR HUB</h1>
               <p>
                 A Learning platform that allows students to connect to tutors in
                 there neigbourhood and so more
@@ -172,9 +175,10 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo2} alt="stock" />
               </span>
-              <h1>AGENT NOW</h1>
+              <h1 className="project-mobile-title">AGENT NOW</h1>
             </div>
             <div className="project-info">
+            <h1 className="project-lg-title">AGENT NOW</h1>
               <p>
                 An agency platform that connects those seeking for a new
                 apartment to a nearby agents in no time.
@@ -188,9 +192,10 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo3} alt="stock" />
               </span>
-              <h1>WESTREAM</h1>
+              <h1 className="project-mobile-title">WESTREAM</h1>
             </div>
             <div className="project-info">
+              <h1 className="project-lg-title">WESTREAM</h1>
               <p>Video streaming platform</p>
               <button className="demo">View Demo</button>
             </div>
@@ -202,7 +207,7 @@ export default function Landing({ setForm }) {
         <p className="about-number">02</p>
         <div className="about-container">
           <div className="about-placeholder">
-            <img src={laptop} alt="about-me"></img>
+            <img className="mock-laptop" src={laptop} alt="about-me"></img>
             <div className="about-info">
               <img className="abt-img" src={mockupDp} alt="avatar" />
               <p>

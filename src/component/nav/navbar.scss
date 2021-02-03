@@ -17,9 +17,13 @@
   ul {
     display: none;
     width: 50%;
+   
     li,
     a {
-      margin-left: 2rem;
+      // margin-left: 2rem;
+      padding: 5px;
+      padding-left: 1rem;
+      padding-right: 1rem;
       @include header6();
       color: #1d4556;
       font-size: 16px;

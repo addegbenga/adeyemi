@@ -1,70 +1,153 @@
-@media screen and (min-width:764px){
-  .landing-container{
-    .landing-content{
-      h1{
-        font-size: 3.2rem;
-        font-weight: 400;
-        width: 80%;
+
+@media screen and (min-width: 764px) {
+  .nav-container{
+    .nav-toggle{
+      display: none;
+    }
+    ul{
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .landing-container {
+    .landing-content {
+      h1 {
+        font-size: 3.3rem;
+        font-weight: 500;
+        width: 70%;
       }
-      p{
+      p {
         font-size: 1.3rem;
         width: 70%;
       }
-      button{
+      button {
         margin-top: 3rem;
         // padding: 10px 40px 10px 20px;
         padding: 20px;
         width: 20%;
-      
+
         font-size: 18px;
         font-weight: 500;
       }
     }
-    .mock-container{
-      img{
+    .mock-container {
+      img {
         width: 80%;
       }
-
     }
   }
 }
 
 //project section
-@media screen and (min-width:764px){
-  .project-section{
-    h1{
+@media screen and (min-width: 764px) {
+  .project-section {
+    h1 {
       font-size: 3.2rem;
       font-weight: 400;
-     
     }
-    .projects-container{
-      .project{
+    .projects-container {
+      .project {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        div{
-          span{
-            img{
+        div {
+          span {
+            img {
               height: 100%;
             }
-          }
-          h1{
-            font-weight: 600;
-            font-size: 20px;
-          }
-        }
-        .project-info{
-          width: 50%;
-          p{
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
            
           }
-          button{
+          .project-mobile-title{
+            display: none;
+          }
+          // h1 {
+          //   font-weight: 600;
+          //   font-size: 20px;
+          // }
+        }
+        .project-info {
+          width: 50%;
+          .project-lg-title{
+            text-align: unset;
+            display: block;
+            margin-bottom: 1.5rem;
+            font-size: 24px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+          button {
             width: 50%;
           }
         }
       }
     }
   }
+}
+@media screen and (min-width: 764px) {
+  .about-section {
+    .about-container {
+      .about-placeholder {
+        .mock-laptop {
+          width: 100%;
+        }
+        .about-info {
+          p {
+            font-size: 2rem;
+            width: 70%;
+          }
+          button {
+            padding: 20px;
+            margin-top: 1.5rem;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .tech-section{
+    .tech-container{
+      width: 70%;
+      p{
+        padding: 20px 25px 20px 25px;
+        margin: 1rem;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 764px) {
+  .contact-section{
+    h1{
+      font-size: 2rem;
+     
+    }
+    p{
+      font-weight: 500;
+    }
+    button{
+      padding: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 764px) {
+footer{
+  .footer-container{
+    width: 90%;
+    margin: auto;
+  }
+  .social-links{
+    justify-content: flex-start;
+  }
+}
 }

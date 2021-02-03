@@ -80,10 +80,10 @@ export default function Navbar() {
             <Link to="#">About</Link>
           </li>
           <li>
-            <Link to="#">Project</Link>
-          </li>
-          <li>
             <Link to="#">Blog</Link>
+          </li>
+          <li className="nav-link-btn">
+            <Link to="#">Project</Link>
           </li>
         </ul>
       </div>

@@ -20,7 +20,7 @@
       margin-bottom: 2.5rem;
       padding: 10px;
       outline: none;
-      border-radius: 5px;
+      border-radius: 15px;
       border: none;
       background-color: #7551e9;
       color: #ffffff;
@@ -42,6 +42,7 @@
       align-items: center;
       ul {
         display: flex;
+        margin-top: 1.7rem;
         a {
           margin-left: 0.5rem;
         }
@@ -67,7 +68,7 @@
 
 .project-section {
   background-color: #ffffff;
-  h1{
+  h1 {
     text-align: center;
     font-size: 24px;
   }
@@ -89,17 +90,26 @@
             height: 250px;
           }
         }
-        h1 {
+        .project-mobile-title {
           font-size: 24px;
           font-weight: 400;
           text-align: unset;
           padding: 5px;
         }
+        // h1 {
+        //   font-size: 24px;
+        //   font-weight: 400;
+        //   text-align: unset;
+        //   padding: 5px;
+        // }
       }
       .project-info {
         display: flex;
         flex-direction: column;
         padding: 5px;
+        .project-lg-title{
+          display: none;
+        }
         button {
           padding: 8px;
           // background-color: #22faa7af;
@@ -138,8 +148,10 @@
         align-items: center;
         border-radius: 10px;
         top: 0;
-        left: 20%;
-        right: 20%;
+        left: 0;
+        right: 0;
+        // left: 20%;
+        // right: 20%;
         padding-top: 1rem;
         padding-bottom: 1rem;
         p {
@@ -211,8 +223,8 @@
   h1 {
     text-align: center;
     font-size: 34px;
-    color: rgba(0, 0, 0, 0.904);
-    // color: rgba(36, 83, 106, 0.51);
+    // color: rgba(0, 0, 0, 0.904);
+    color: rgba(36, 83, 106, 0.51);
   }
   p {
     padding-top: 2rem;
@@ -220,11 +232,11 @@
     font-size: 24px;
     // font-weight: 600;
     text-align: center;
-    color: rgb(63, 63, 63);
+    // color: rgb(63, 63, 63);
   }
   button {
     padding: 10px;
-    background-color: #38DF9E;
+    background-color: #38df9e;
     border: none;
     border-radius: 5px;
     color: #fafffd;
@@ -262,13 +274,12 @@ footer {
     align-items: center;
 
     li {
-    
       .fa-instagram,
       .fa-twitter,
       .fa-whatsapp,
       .fa-github {
         // background: rgba(36, 83, 106, 0.51);
-        background-color: #C4C4C4;
+        background-color: #c4c4c4;
         color: white;
         margin-right: 1rem;
         display: flex;
@@ -276,8 +287,8 @@ footer {
         align-items: center;
         padding: 5px;
         border-radius: 50px;
-        &:hover{
-           background:#38DF9E;
+        &:hover {
+          background: #38df9e;
         }
       }
     }
