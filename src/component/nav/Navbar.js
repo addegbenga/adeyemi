@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import mylogo from "../img/mylogo.svg";
+// import mylogo from "../img/mylogo.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power4 } from "gsap";
 
@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="nav-container">
-        <img src={mylogo} alt="logo" />
+        {/* <img src={mylogo} alt="logo" /> */}
         <div className="nav-toggle" onClick={() => tl.play()}>
           <i
             className="fa fa-bars"
