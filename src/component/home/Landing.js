@@ -95,14 +95,14 @@ export default function Landing({ setForm }) {
     <section>
       <div intro={setIntro} className="landing-container">
         <div className="landing-content">
-          <h1 ref={header}> Creating beutifully crafted web design.</h1>
+          <h1 ref={header}>Full stack web developer </h1>
           <p ref={subheader}>
             {/* Hey there i"m a full stack developer specialised in NodeJS on the
             backend, javascript and React/Redux for frontend developement My aim
             is to make the web a beutifull place creating the balance between
             intuitive design and functionality... */}
-            lorem ipsume is some words you have to put out ther to get some
-            audienc you knlorem ipsume is
+            Building the next big thing because the possibilities are numerous
+            once we decide to act and not react.
           </p>
           <button>LETS TALK</button>
           <div className="mock-container" ref={svgDesign}>
@@ -114,13 +114,22 @@ export default function Landing({ setForm }) {
               <div></div>
               <ul>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-twitter fa-lg" style={{ color: "white" }}></i>
+                  <i
+                    className="fa fa-twitter fa-lg"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-github fa-lg" style={{ color: "white" }}></i>
+                  <i
+                    className="fa fa-github fa-lg"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
                 <a href="twitter.com/addegbenga">
-                  <i className="fa fa-linkedin fa-lg" style={{ color: "white" }}></i>
+                  <i
+                    className="fa fa-linkedin fa-lg"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </ul>
             </div>
@@ -145,11 +154,13 @@ export default function Landing({ setForm }) {
               <h1 className="project-mobile-title">QWIKKER</h1>
             </div>
             <div className="project-info">
-            <h1 className="project-lg-title">QWIKERR</h1>
+              <h1 className="project-lg-title">QWIKERR</h1>
               <p>
                 A digital business card platform made for creatives and creators
               </p>
-              <button className="demo">View Demo</button>
+              <button className="demo">
+                <a href="https://qwikerr.com">View Demo</a>
+              </button>
             </div>
           </div>
 
@@ -161,12 +172,15 @@ export default function Landing({ setForm }) {
               <h1 className="project-mobile-title">TUTORHUB</h1>
             </div>
             <div className="project-info">
-            <h1 className="project-lg-title">TUTOR HUB</h1>
+              <h1 className="project-lg-title">TUTOR HUB</h1>
               <p>
                 A Learning platform that allows students to connect to tutors in
                 there neigbourhood and so more
               </p>
-              <button className="demo">View Demo</button>
+              <button className="demo">
+                {" "}
+                <a href="https://tutorhub.vercel.app">View Demo</a>
+              </button>
             </div>
           </div>
 
@@ -178,7 +192,7 @@ export default function Landing({ setForm }) {
               <h1 className="project-mobile-title">AGENT NOW</h1>
             </div>
             <div className="project-info">
-            <h1 className="project-lg-title">AGENT NOW</h1>
+              <h1 className="project-lg-title">AGENT NOW</h1>
               <p>
                 An agency platform that connects those seeking for a new
                 apartment to a nearby agents in no time.

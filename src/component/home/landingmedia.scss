@@ -56,12 +56,16 @@
     .projects-container {
       .project {
         flex-direction: row;
+        overflow: hidden;
+        // background-color: red;
+        height: 350px;
         align-items: center;
         justify-content: space-between;
         div {
           span {
             img {
               height: 100%;
+              overflow: hidden;
             }
            
           }

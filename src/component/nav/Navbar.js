@@ -7,7 +7,7 @@ import { gsap, Power4 } from "gsap";
 export default function Navbar() {
   // const [isOpen, setOpen] = useState(false);
   const sidenavRef = useRef(null);
-  const sideLink = useRef(null);
+  // const sideLink = useRef(null);
 
   const tl = gsap.timeline({ paused: true, reversed: true });
   useEffect(() => {
@@ -25,11 +25,13 @@ export default function Navbar() {
         display: "block",
         opacity: 1,
       },
-    }).from(sideLink.current, {
-      duration: 0.3,
-      opacity: 0,
-      y: 40,
     });
+
+    // .from(sideLink.current, {
+    //   duration: 0.3,
+    //   opacity: 0,
+    //   y: 40,
+    // });
   }, [tl]);
 
   useEffect(() => {
@@ -52,7 +54,7 @@ export default function Navbar() {
         }}
       >
         <div>
-          <ul ref={sideLink}>
+          <ul>
             <li>Home</li>
             <li>Contact</li>
             <li>About</li>
@@ -68,7 +70,7 @@ export default function Navbar() {
           <i
             className="fa fa-bars"
             style={{
-              color: "#20C5D3",
+              color: "#7551e9",
             }}
           ></i>
         </div>
