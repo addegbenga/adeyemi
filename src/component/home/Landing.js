@@ -113,7 +113,7 @@ export default function Landing({ setForm }) {
               <div></div>
               <div></div>
               <ul>
-                <a href="https:twitter.com/addegbenga">
+                <a href="twitter.com/addegbenga">
                   <i
                     className="fa fa-twitter fa-lg"
                     style={{ color: "white" }}
@@ -284,7 +284,7 @@ export default function Landing({ setForm }) {
 
           <ul className="social-links">
             <li>
-              <a href="https://wa.me/08086771870">
+              <a href="https://wa.me/+2348086771870">
                 {" "}
                 <i className="fa fa-whatsapp "></i>
               </a>
