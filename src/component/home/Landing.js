@@ -113,19 +113,19 @@ export default function Landing({ setForm }) {
               <div></div>
               <div></div>
               <ul>
-                <a href="twitter.com/addegbenga">
+                <a href="https:twitter.com/addegbenga">
                   <i
                     className="fa fa-twitter fa-lg"
                     style={{ color: "white" }}
                   ></i>
                 </a>
-                <a href="twitter.com/addegbenga">
+                <a href="https://github.com/addegbenga">
                   <i
                     className="fa fa-github fa-lg"
                     style={{ color: "white" }}
                   ></i>
                 </a>
-                <a href="twitter.com/addegbenga">
+                <a href="https://linkedin/in/addegbenga">
                   <i
                     className="fa fa-linkedin fa-lg"
                     style={{ color: "white" }}
