@@ -6,6 +6,7 @@ import logo2 from "../img/p4 1 (1).svg";
 import logo3 from "../img/portfolio-details.svg";
 import logo4 from "../img/p2 2.svg";
 import laptop from "../img/laptop.svg";
+import resume from "../img/adeyemi resume.pdf"
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
@@ -236,7 +237,7 @@ export default function Landing({ setForm }) {
                 {intro[0].msg}
               </p>
 
-              <button>Download resume</button>
+              <button > <a href={resume} download>Download resume</a></button>
             </div>
           </div>
         </div>
