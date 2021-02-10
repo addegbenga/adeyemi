@@ -136,6 +136,10 @@
 }
 
 .about-section {
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
   .about-number {
     font-size: 2rem;
     color: #20c5d3;
@@ -242,15 +246,14 @@
   h1 {
     text-align: center;
     font-size: 34px;
-    color: rgba(0, 0, 0, 0.801);
   }
   p {
+    padding:5px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 24px;
     // font-weight: 600;
     text-align: center;
-    color: rgb(63, 63, 63);
   }
   button {
     padding: 10px;

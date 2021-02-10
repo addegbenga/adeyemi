@@ -217,7 +217,7 @@ export default function Landing({ setForm }) {
         </div>
       </section>
       <section className="about-section">
-        {/* <h1>About me</h1> */}
+        <h1>About me</h1>
         <p className="about-number">02</p>
         <div className="about-container">
           <div className="about-placeholder">
