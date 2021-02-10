@@ -65,6 +65,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="nav-container">
+     
         {/* <img src={mylogo} alt="logo" /> */}
         <div className="nav-toggle" onClick={() => tl.play()}>
           <i
