@@ -12,8 +12,9 @@
     margin: auto;
     h1 {
       margin-bottom: 1rem;
-      color: black;
+      color: #342a57;
       font-size: 2.5rem;
+      line-height: 2.7rem;
       font-weight: 500;
     }
     p{
@@ -29,6 +30,9 @@
       background-color: #7551e9;
       color: #ffffff;
       width: 40%;
+      a{
+        color: #ffffff;
+      }
     }
     // button{
     //   display: none;

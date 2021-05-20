@@ -6,7 +6,7 @@ import logo2 from "../img/p4 1 (1).svg";
 import logo3 from "../img/portfolio-details.svg";
 import logo4 from "../img/p2 2.svg";
 import laptop from "../img/laptop.svg";
-import resume from "../img/adeyemi resume.pdf"
+import resume from "../img/adeyemi resume.pdf";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power3 } from "gsap";
@@ -105,7 +105,9 @@ export default function Landing({ setForm }) {
             Building the next big thing because the possibilities are numerous
             once we decide to act and not react.
           </p>
-          <button>LETS TALK</button>
+          <button>
+            <a href="#contact"> LETS TALK</a>
+          </button>
           <div className="mock-container" ref={svgDesign}>
             <div className="mock-up-content">
               <img className="mockdp" src={mockupDp} alt="dp" />
@@ -237,7 +239,12 @@ export default function Landing({ setForm }) {
                 {intro[0].msg}
               </p>
 
-              <button > <a href={resume} download>Download resume</a></button>
+              <button>
+                {" "}
+                <a href={resume} download>
+                  Download resume
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -257,7 +264,7 @@ export default function Landing({ setForm }) {
         </div>
       </section>
 
-      <section className="contact-section">
+      <section className="contact-section" id="contact">
         <h1>LIKE WHAT YOU SEE</h1>
         <p>
           I"m always open to discussing about work or partnership

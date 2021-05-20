@@ -67,6 +67,7 @@ export default function Navbar() {
       <div className="nav-container">
      
         {/* <img src={mylogo} alt="logo" /> */}
+        <h1 class="logo">Adex<span class="dot">.</span></h1>
         <div className="nav-toggle" onClick={() => tl.play()}>
           <i
             className="fa fa-bars"
