@@ -1,17 +1,27 @@
-
 @media screen and (min-width: 764px) {
-  .nav-container{
-    .nav-toggle{
+  .nav-container {
+    h1{
+      font-weight: 900;
+    }
+    .nav-toggle {
       display: none;
     }
-    ul{
+    justify-content: space-around;
+
+    ul {
       display: flex;
+      li{
+        a{
+          font-size: 12px;
+          color: #342a57;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width: 764px){
-  .sidebar-container{
+@media screen and (min-width: 764px) {
+  .sidebar-container {
     display: none;
   }
 }
@@ -22,18 +32,18 @@
       h1 {
         font-size: 3.3rem;
         font-weight: 500;
+        line-height: 3.2rem;
         width: 70%;
       }
       p {
-        font-size: 1.3rem;
-        width: 70%;
+        font-size: 0.9rem;
+        width: 40%;
       }
       button {
-        margin-top: 3rem;
+        margin-top: 1rem;
         // padding: 10px 40px 10px 20px;
-        padding: 20px;
+        padding: 10px;
         width: 20%;
-
         font-size: 18px;
         font-weight: 500;
       }
@@ -67,9 +77,8 @@
               height: 100%;
               overflow: hidden;
             }
-           
           }
-          .project-mobile-title{
+          .project-mobile-title {
             display: none;
           }
           // h1 {
@@ -79,7 +88,7 @@
         }
         .project-info {
           width: 50%;
-          .project-lg-title{
+          .project-lg-title {
             text-align: unset;
             display: block;
             margin-bottom: 1.5rem;
@@ -122,42 +131,39 @@
 }
 
 @media screen and (min-width: 764px) {
-  .tech-section{
-    .tech-container{
+  .tech-section {
+    .tech-container {
       width: 70%;
-      p{
+      p {
         padding: 20px 25px 20px 25px;
         margin: 1rem;
       }
     }
   }
-
 }
 
-
 @media screen and (min-width: 764px) {
-  .contact-section{
-    h1{
+  .contact-section {
+    h1 {
       font-size: 2rem;
-     
     }
-    p{
+    p {
       font-weight: 500;
     }
-    button{
+    button {
       padding: 15px;
     }
   }
 }
 
 @media screen and (min-width: 764px) {
-footer{
-  .footer-container{
-    width: 90%;
-    margin: auto;
+  footer {
+    .footer-container {
+      width: 90%;
+      margin: auto;
+    }
+    .social-links {
+      justify-content: flex-start;
+    }
   }
-  .social-links{
-    justify-content: flex-start;
-  }
-}
 }

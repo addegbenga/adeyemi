@@ -21,6 +21,7 @@ function App() {
           {showForm && <Form setForm={setForm} />}
           <Navbar />
           <Landing setForm={setForm} />
+
         </>
       )}
     </>
