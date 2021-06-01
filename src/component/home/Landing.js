@@ -192,15 +192,17 @@ export default function Landing({ setForm }) {
               <span>
                 <img src={logo2} alt="stock" />
               </span>
-              <h1 className="project-mobile-title">AGENT NOW</h1>
+              <h1 className="project-mobile-title">FOOD DASH</h1>
             </div>
             <div className="project-info">
-              <h1 className="project-lg-title">AGENT NOW</h1>
+              <h1 className="project-lg-title">FOOD-DASH</h1>
               <p>
-                An agency platform that connects those seeking for a new
-                apartment to a nearby agents in no time.
+                A platform that allows users order for food with ease just
+                register with our app and you are goood to go
               </p>
-              <button className="demo">View Demo</button>
+              <button className="demo">
+                <a href="https://foo-dash.vercel.app">View Demo</a>
+              </button>
             </div>
           </div>
 
